@@ -1,2 +1,4 @@
-# vscode-opengl-test
-Build and run OpenGL program in VSCode
+
+# VSCode + OpenGL Test
+
+VSCode + OpenGL Development Environment Settings for Windows
