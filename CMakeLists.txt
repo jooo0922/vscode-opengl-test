@@ -31,6 +31,10 @@ FetchContent_MakeAvailable(glfw)
 # 실행 파일 정의
 add_executable(${PROJECT_NAME} src/main.cpp)
 
+# 타겟에 glad 파일 추가
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_sources(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/src/glad.c)
+
 # 타겟에 라이브러리 링크
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw spdlog)
 
